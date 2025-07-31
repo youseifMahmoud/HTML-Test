@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz - 50 Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1 class="quiz-title">HTML Quiz Challenge</h1>
+            <p>Test your HTML knowledge with 50 progressive questions</p>
+        </div>
+
+        <div class="quiz-progress">
+            <span id="questionNumber">Question 1 of 50</span>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <span class="difficulty-badge" id="difficultyBadge">Easy</span>
+        </div>
+
+        <div class="question-container">
+            <div class="question" id="questionText"></div>
+            <div class="options" id="optionsContainer"></div>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-secondary" id="prevBtn" onclick="previousQuestion()">Previous</button>
+            <button class="btn btn-primary" id="checkBtn" onclick="checkAnswer()">Check Answer</button>
+            <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+        </div>
+
+        <div id="result" class="result" style="display: none;"></div>
+        <div id="finalScore" class="final-score" style="display: none;"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
